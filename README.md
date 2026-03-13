@@ -1,41 +1,50 @@
-# SMHF MVP starter
+# SMHF MVP
 
-Simple static starter for a **Sell My House Fast** lead-gen MVP.
+A simple static lead-gen starter for **Sell My House Fast**.
 
-## What's included
+## Project Structure
 
-- `index.html` — main seller landing page
+- `index.html` — seller landing page
 - `buyers.html` — buyer signup page
-- `states/*.html` — all 50 state landing pages
+- `states/*.html` — 50 state landing pages
 - `styles.css` — shared styles
-- `script.js` — simple demo behavior + ZIP lookup
-- `sitemap.xml` and `robots.txt`
+- `script.js` — demo behavior and ZIP lookup
+- `sitemap.xml` / `robots.txt` — SEO basics
+- `keyword-priority-report.md` — keyword research notes
 
-## Brand in this starter
+## Brand
 
-- Site: **SMHF**
-- Full phrase: **Sell My House Fast**
-- AI agent: **Rush**
+| Key | Value |
+|-----|-------|
+| Site | SMHF |
+| Full phrase | Sell My House Fast |
+| AI agent | Rush |
 
-## Fastest way to launch
+## Local Preview
 
-1. Upload all files to a GitHub repo or Vercel project.
-2. Replace `https://example.com` in canonical URLs and sitemap.
-3. Replace `action="#"` on forms with your form endpoint or Vercel serverless API route.
-4. Replace footer/demo copy with your real contact info and legal text.
+Open `index.html` directly in a browser, or run a local server:
 
-## MVP suggestion
+```bash
+npx serve .
+```
 
-Do not build a full Opendoor clone first.
+## Deployment Checklist
 
-Build:
-- seller intake
-- buyer signup
-- AI lead summary
-- routing to buyers
+1. Push all files to a GitHub repo and connect to Vercel (or upload directly).
+2. ~~Find and replace all instances of `https://example.com`~~ — done, replaced with `https://smhf-mvp.vercel.app`.
+3. Replace `action="#"` on all forms with your form endpoint (e.g., a Vercel serverless function at `/api/submit`).
+4. Update footer copy with real contact info, privacy policy, and legal text.
 
-Skip for now:
-- instant pricing engine
-- image scraping
-- complex CRM
-- heavy dashboards
+## Roadmap
+
+**Build first:**
+- Seller intake form
+- Buyer signup
+- AI lead summary (Rush agent)
+- Lead routing to buyers
+
+**Defer for now:**
+- Instant pricing engine
+- Image scraping
+- Complex CRM
+- Heavy dashboards
