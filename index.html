@@ -1,0 +1,337 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sell My House Fast | Get Cash Offers Fast</title>
+  <meta name="description" content="Sell your house fast for a cash offer. Tell us about your property, let Rush build your seller card, and compare cash offers from verified buyers.">
+  <link rel="canonical" href="https://example.com/">
+  <meta property="og:title" content="Sell My House Fast | Get Cash Offers Fast">
+  <meta property="og:description" content="Get cash offers fast. No listings, no repairs, no waiting.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SM</span>
+      <span>SMHF<small>Sell My House Fast</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#states">States</a>
+      <a href="buyers.html">For buyers</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#seller-form">Get my cash offer</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Powered by Rush, the AI intake agent</div>
+      <h1>Sell your house fast for a cash offer.</h1>
+      <p>Start with your ZIP code or address. Rush collects the seller details, builds a clean lead card, and sends it to cash buyers who can make fast offers.</p>
+      <div class="inline-cta">
+        <a class="btn btn-primary" href="#seller-form">Get my cash offer</a>
+        <a class="btn btn-outline" href="buyers.html">Join as a buyer</a>
+      </div>
+      <ul class="bullets">
+        <li>No listings or showings</li>
+        <li>Sell as-is</li>
+        <li>Compare cash offers</li>
+        <li>Close on your timeline</li>
+      </ul>
+    </div>
+
+    <aside class="card form-card" id="seller-form">
+      <h3>Get matched with cash buyers</h3>
+      <p>For the MVP, keep the promise simple: fast intake, fast routing, fast offers.</p>
+      <form data-demo-form action="#" method="post">
+        <div class="form-grid">
+          <div class="full">
+            <label for="zip">ZIP code</label>
+            <input id="zip" name="zip" type="text" inputmode="numeric" maxlength="5" placeholder="e.g. 33101" data-zip>
+            <div class="zip-hint" data-zip-hint></div>
+          </div>
+          <div class="full">
+            <label for="address">Property address <span class="muted">(optional for first step)</span></label>
+            <input id="address" name="address" type="text" placeholder="123 Main St, City, State">
+          </div>
+          <div>
+            <label for="city">City</label>
+            <input id="city" name="city" type="text" placeholder="Miami" data-city>
+          </div>
+          <div>
+            <label for="state">State</label>
+            <input id="state" name="state" type="text" placeholder="Florida" data-state>
+          </div>
+          <div>
+            <label for="condition">Property condition</label>
+            <select id="condition" name="condition">
+              <option>Needs major repairs</option>
+              <option>Needs some updates</option>
+              <option>Move-in ready</option>
+            </select>
+          </div>
+          <div>
+            <label for="timeline">How fast do you need to sell?</label>
+            <select id="timeline" name="timeline">
+              <option>ASAP</option>
+              <option>Within 7 days</option>
+              <option>Within 30 days</option>
+              <option>Just exploring</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="details">Tell us what is going on</label>
+            <textarea id="details" name="details" placeholder="Inherited property, tenant issue, behind on payments, relocating, probate, repairs needed, etc."></textarea>
+          </div>
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name">
+          </div>
+          <div>
+            <label for="contact">Phone or email</label>
+            <input id="contact" name="contact" type="text" placeholder="Best way to reach you">
+          </div>
+          <div class="full">
+            <button class="btn btn-primary" type="submit">Get my cash offer</button>
+            <div class="form-note">Swap this demo form with a Vercel API route later. For now, the page and messaging are ready for traffic tests.</div>
+          </div>
+        </div>
+      </form>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="container">
+    <h2>How the MVP should work</h2>
+    <p class="lead">Do not overcomplicate the AI. The AI should not try to fully value the property on day one. It should reduce friction, summarize the lead, and route it fast.</p>
+    <div class="steps">
+      <div class="card step">
+        <div class="step-num">1</div>
+        <h3>Seller intake</h3>
+        <p>Seller enters ZIP code or address, timeline, condition, contact info, and a short explanation.</p>
+      </div>
+      <div class="card step">
+        <div class="step-num">2</div>
+        <h3>Rush builds the lead card</h3>
+        <p>Rush turns messy seller notes into a clean summary buyers can scan in seconds.</p>
+      </div>
+      <div class="card step">
+        <div class="step-num">3</div>
+        <h3>Buyer routing</h3>
+        <p>Only send the lead to buyers active in that market and price band.</p>
+      </div>
+      <div class="card step">
+        <div class="step-num">4</div>
+        <h3>Offers come back fast</h3>
+        <p>Buyers respond with a cash offer or request more info. Seller picks the best path.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container band">
+    <div class="band-grid">
+      <div>
+        <h2>What the AI should actually do</h2>
+        <p>For a real MVP, keep the AI focused on four jobs: intake cleanup, urgency scoring, lead card creation, and buyer matching. That is enough to validate the business.</p>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><strong>Intake</strong><span>Turn seller notes into structured data</span></div>
+        <div class="kpi"><strong>Routing</strong><span>Match by state, ZIP, and buy box</span></div>
+        <div class="kpi"><strong>Summary</strong><span>Create a short lead card buyers can act on</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <div class="card list-card">
+      <h2>What to launch now</h2>
+      <ul>
+        <li>One national page targeting “sell my house fast” and related commercial terms.</li>
+        <li>One buyer signup page for investors and cash buyers.</li>
+        <li>State landing pages with localized headlines and FAQ.</li>
+        <li>Simple lead form with ZIP or address, condition, timeline, and contact.</li>
+        <li>Seller uploads for property photos instead of scraping images.</li>
+      </ul>
+    </div>
+    <div class="card list-card">
+      <h2>What to skip for now</h2>
+      <ul>
+        <li>Instant pricing promises unless you have a real pricing model.</li>
+        <li>Google image scraping as a core workflow.</li>
+        <li>Too many seller form fields on the first screen.</li>
+        <li>All 50 states in paid ads before you know where buyers actually convert.</li>
+        <li>Fancy dashboards before you have closed deals.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="states">
+  <div class="container">
+    <h2>State landing pages</h2>
+    <p class="lead">This starter includes pages for all 50 states so you can test state-specific SEO and paid traffic fast. Start with the states where you can actually fulfill offers first.</p>
+    <div class="states">
+      <a class="state-link" href="states/alabama.html"><span>Alabama</span><span>→</span></a>
+      <a class="state-link" href="states/alaska.html"><span>Alaska</span><span>→</span></a>
+      <a class="state-link" href="states/arizona.html"><span>Arizona</span><span>→</span></a>
+      <a class="state-link" href="states/arkansas.html"><span>Arkansas</span><span>→</span></a>
+      <a class="state-link" href="states/california.html"><span>California</span><span>→</span></a>
+      <a class="state-link" href="states/colorado.html"><span>Colorado</span><span>→</span></a>
+      <a class="state-link" href="states/connecticut.html"><span>Connecticut</span><span>→</span></a>
+      <a class="state-link" href="states/delaware.html"><span>Delaware</span><span>→</span></a>
+      <a class="state-link" href="states/florida.html"><span>Florida</span><span>→</span></a>
+      <a class="state-link" href="states/georgia.html"><span>Georgia</span><span>→</span></a>
+      <a class="state-link" href="states/hawaii.html"><span>Hawaii</span><span>→</span></a>
+      <a class="state-link" href="states/idaho.html"><span>Idaho</span><span>→</span></a>
+      <a class="state-link" href="states/illinois.html"><span>Illinois</span><span>→</span></a>
+      <a class="state-link" href="states/indiana.html"><span>Indiana</span><span>→</span></a>
+      <a class="state-link" href="states/iowa.html"><span>Iowa</span><span>→</span></a>
+      <a class="state-link" href="states/kansas.html"><span>Kansas</span><span>→</span></a>
+      <a class="state-link" href="states/kentucky.html"><span>Kentucky</span><span>→</span></a>
+      <a class="state-link" href="states/louisiana.html"><span>Louisiana</span><span>→</span></a>
+      <a class="state-link" href="states/maine.html"><span>Maine</span><span>→</span></a>
+      <a class="state-link" href="states/maryland.html"><span>Maryland</span><span>→</span></a>
+      <a class="state-link" href="states/massachusetts.html"><span>Massachusetts</span><span>→</span></a>
+      <a class="state-link" href="states/michigan.html"><span>Michigan</span><span>→</span></a>
+      <a class="state-link" href="states/minnesota.html"><span>Minnesota</span><span>→</span></a>
+      <a class="state-link" href="states/mississippi.html"><span>Mississippi</span><span>→</span></a>
+      <a class="state-link" href="states/missouri.html"><span>Missouri</span><span>→</span></a>
+      <a class="state-link" href="states/montana.html"><span>Montana</span><span>→</span></a>
+      <a class="state-link" href="states/nebraska.html"><span>Nebraska</span><span>→</span></a>
+      <a class="state-link" href="states/nevada.html"><span>Nevada</span><span>→</span></a>
+      <a class="state-link" href="states/new-hampshire.html"><span>New Hampshire</span><span>→</span></a>
+      <a class="state-link" href="states/new-jersey.html"><span>New Jersey</span><span>→</span></a>
+      <a class="state-link" href="states/new-mexico.html"><span>New Mexico</span><span>→</span></a>
+      <a class="state-link" href="states/new-york.html"><span>New York</span><span>→</span></a>
+      <a class="state-link" href="states/north-carolina.html"><span>North Carolina</span><span>→</span></a>
+      <a class="state-link" href="states/north-dakota.html"><span>North Dakota</span><span>→</span></a>
+      <a class="state-link" href="states/ohio.html"><span>Ohio</span><span>→</span></a>
+      <a class="state-link" href="states/oklahoma.html"><span>Oklahoma</span><span>→</span></a>
+      <a class="state-link" href="states/oregon.html"><span>Oregon</span><span>→</span></a>
+      <a class="state-link" href="states/pennsylvania.html"><span>Pennsylvania</span><span>→</span></a>
+      <a class="state-link" href="states/rhode-island.html"><span>Rhode Island</span><span>→</span></a>
+      <a class="state-link" href="states/south-carolina.html"><span>South Carolina</span><span>→</span></a>
+      <a class="state-link" href="states/south-dakota.html"><span>South Dakota</span><span>→</span></a>
+      <a class="state-link" href="states/tennessee.html"><span>Tennessee</span><span>→</span></a>
+      <a class="state-link" href="states/texas.html"><span>Texas</span><span>→</span></a>
+      <a class="state-link" href="states/utah.html"><span>Utah</span><span>→</span></a>
+      <a class="state-link" href="states/vermont.html"><span>Vermont</span><span>→</span></a>
+      <a class="state-link" href="states/virginia.html"><span>Virginia</span><span>→</span></a>
+      <a class="state-link" href="states/washington.html"><span>Washington</span><span>→</span></a>
+      <a class="state-link" href="states/west-virginia.html"><span>West Virginia</span><span>→</span></a>
+      <a class="state-link" href="states/wisconsin.html"><span>Wisconsin</span><span>→</span></a>
+      <a class="state-link" href="states/wyoming.html"><span>Wyoming</span><span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <div class="card list-card">
+      <h2>Why sellers might convert</h2>
+      <ul>
+        <li>Fast timeline and less uncertainty.</li>
+        <li>Sell as-is without repairs or cleaning for showings.</li>
+        <li>Multiple cash offers instead of one take-it-or-leave-it path.</li>
+        <li>Simple intake instead of a long traditional listing process.</li>
+      </ul>
+    </div>
+    <div class="card list-card">
+      <h2>Why buyers might join</h2>
+      <ul>
+        <li>Fresh, structured seller leads.</li>
+        <li>Location-based routing.</li>
+        <li>A fast reply loop for motivated sellers.</li>
+        <li>Clear path to performance-based payout if a deal closes.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>FAQ</h2>
+    <div class="accordion">
+      <details open>
+        <summary>Is this more like Opendoor or a lead marketplace?</summary>
+        <p>For the MVP, it should be a lead marketplace. The site gathers seller info, Rush organizes it, and the lead goes to buyers who can make cash offers quickly.</p>
+      </details>
+      <details>
+        <summary>Should the first field be ZIP code or address?</summary>
+        <p>For speed, use “ZIP code or address” and let the seller choose. ZIP is easier for a lightweight MVP, but address-first usually feels more concrete for high-intent sellers.</p>
+      </details>
+      <details>
+        <summary>Should I scrape Google Images of the property?</summary>
+        <p>No. Start with seller uploads. Later, you can add a legitimate address lookup and optional map or street-view style visuals.</p>
+      </details>
+      <details>
+        <summary>What is Rush?</summary>
+        <p>Rush is the short AI agent name in this template. Rush does intake cleanup, lead card creation, and buyer routing. It does not need to pretend to be a full valuation engine on day one.</p>
+      </details>
+      <details>
+        <summary>Can I use SMHF.com?</summary>
+        <p>Yes as a short, memorable domain if you control it, but always pair it with the full words “Sell My House Fast” in the logo, title tags, and headline so the offer is instantly clear.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="color:#fff">
+          <span class="brand-mark">SM</span>
+          <span>SMHF<small style="color:#aeb7c8">Sell My House Fast</small></span>
+        </a>
+        <p style="margin-top:16px;max-width:360px">Fast seller intake. Fast buyer routing. Fast cash offers.</p>
+        <div class="badges">
+          <span class="badge">Rush AI</span>
+          <span class="badge">Sell as-is</span>
+          <span class="badge">All states</span>
+        </div>
+      </div>
+      <div>
+        <h4>Seller</h4>
+        <div class="footer-links">
+          <a href="#seller-form">Get my cash offer</a>
+          <a href="#how">How it works</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+      <div>
+        <h4>Buyer</h4>
+        <div class="footer-links">
+          <a href="buyers.html">Join as a buyer</a>
+          <a href="buyers.html#buyer-form">Buyer form</a>
+        </div>
+      </div>
+      <div>
+        <h4>States</h4>
+        <div class="footer-links">
+          <a href="states/florida.html">Florida</a>
+          <a href="states/texas.html">Texas</a>
+          <a href="states/california.html">California</a>
+          <a href="states/new-jersey.html">New Jersey</a>
+        </div>
+      </div>
+    </div>
+    <div class="tiny">© 2026 SMHF. Replace demo copy, contact info, and form endpoints before launch.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

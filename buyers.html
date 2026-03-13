@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Join the Cash Buyer Network | SMHF</title>
+  <meta name="description" content="Join the SMHF cash buyer network and receive clean seller lead cards from Rush, our AI intake agent.">
+  <link rel="canonical" href="https://example.com/buyers.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SM</span>
+      <span>SMHF<small>Sell My House Fast</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Seller page</a>
+      <a href="#buyer-form">Buyer form</a>
+      <a class="btn btn-primary" href="#buyer-form">Join now</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">For investors and cash buyers</div>
+    <h1>Get matched with motivated home sellers.</h1>
+    <p>Rush turns seller intake into a clean lead card, then routes it to buyers by market, property type, and speed.</p>
+    <div class="inline-cta">
+      <a class="btn btn-primary" href="#buyer-form">Join as a buyer</a>
+      <a class="btn btn-outline" href="index.html">Back to seller page</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <div class="card list-card">
+      <h2>Why buyers join</h2>
+      <ul>
+        <li>Cleaner lead data from one structured intake flow.</li>
+        <li>Routing by state, city, ZIP, and seller timeline.</li>
+        <li>Optional property notes, photos, and urgency context.</li>
+        <li>Fast chance to submit a cash offer or request more details.</li>
+      </ul>
+    </div>
+    <div class="card list-card">
+      <h2>What you need to collect</h2>
+      <ul>
+        <li>Markets and ZIP codes served</li>
+        <li>Typical buy box and asset types</li>
+        <li>Close speed and proof of funds</li>
+        <li>Best contact path for new deals</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <aside class="card form-card" id="buyer-form">
+      <h3>Join the buyer network</h3>
+      <p>Simple first version. Collect only what you need to route deals correctly.</p>
+      <form data-demo-form action="#" method="post">
+        <div class="form-grid">
+          <div>
+            <label for="buyer-name">Full name</label>
+            <input id="buyer-name" name="name" type="text" placeholder="Your name">
+          </div>
+          <div>
+            <label for="buyer-company">Company</label>
+            <input id="buyer-company" name="company" type="text" placeholder="Company name">
+          </div>
+          <div class="full">
+            <label for="markets">Markets served</label>
+            <input id="markets" name="markets" type="text" placeholder="Florida, Texas, Georgia, Phoenix, Tampa, etc.">
+          </div>
+          <div>
+            <label for="asset-type">Preferred asset type</label>
+            <select id="asset-type" name="asset_type">
+              <option>Single-family</option>
+              <option>Multifamily</option>
+              <option>Condo / townhouse</option>
+              <option>Land</option>
+              <option>Any distressed property</option>
+            </select>
+          </div>
+          <div>
+            <label for="buy-box">Typical buy box</label>
+            <input id="buy-box" name="buy_box" type="text" placeholder="$100k - $500k, distressed, owner-occupied, etc.">
+          </div>
+          <div>
+            <label for="speed">How fast can you close?</label>
+            <select id="speed" name="close_speed">
+              <option>3-7 days</option>
+              <option>7-14 days</option>
+              <option>15-30 days</option>
+            </select>
+          </div>
+          <div>
+            <label for="proof">Proof of funds link <span class="muted">(optional)</span></label>
+            <input id="proof" name="proof" type="url" placeholder="https://">
+          </div>
+          <div class="full">
+            <label for="buyer-contact">Best email or phone</label>
+            <input id="buyer-contact" name="contact" type="text" placeholder="How should sellers reach you?">
+          </div>
+          <div class="full">
+            <label for="buyer-notes">Notes</label>
+            <textarea id="buyer-notes" name="notes" placeholder="What kinds of deals are you looking for? What states are highest priority?"></textarea>
+          </div>
+          <div class="full">
+            <button class="btn btn-primary" type="submit">Join now</button>
+            <div class="form-note">Replace the form action with your lead endpoint later.</div>
+          </div>
+        </div>
+      </form>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Buyer FAQ</h2>
+    <div class="accordion">
+      <details open>
+        <summary>How do buyers receive leads?</summary>
+        <p>For the MVP, you can send email lead cards or simple dashboard notifications. Keep it lightweight until you see closed deals.</p>
+      </details>
+      <details>
+        <summary>What is in the lead card?</summary>
+        <p>ZIP or address, city, state, seller timeline, condition, short seller notes, and contact path. Add photos when available.</p>
+      </details>
+      <details>
+        <summary>How should offers work?</summary>
+        <p>The simplest version is a reply flow: buyer submits a price range, close speed, and a request for more info if needed.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="color:#fff">
+          <span class="brand-mark">SM</span>
+          <span>SMHF<small style="color:#aeb7c8">Sell My House Fast</small></span>
+        </a>
+        <p style="margin-top:16px;max-width:360px">Fresh seller leads for serious cash buyers.</p>
+      </div>
+      <div>
+        <h4>Seller</h4>
+        <div class="footer-links">
+          <a href="index.html">Seller landing page</a>
+          <a href="index.html#seller-form">Seller form</a>
+        </div>
+      </div>
+      <div>
+        <h4>Buyer</h4>
+        <div class="footer-links">
+          <a href="#buyer-form">Join as a buyer</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+      <div>
+        <h4>Top states</h4>
+        <div class="footer-links">
+          <a href="states/florida.html">Florida</a>
+          <a href="states/texas.html">Texas</a>
+          <a href="states/georgia.html">Georgia</a>
+          <a href="states/arizona.html">Arizona</a>
+        </div>
+      </div>
+    </div>
+    <div class="tiny">© 2026 SMHF. Demo buyer page.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
